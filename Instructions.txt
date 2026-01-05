@@ -1,0 +1,24 @@
+
+### ✅ THREE-TIER ARCHITECTURE – ONE-LINE STEPS
+
+1. Created a custom VPC with a defined CIDR block.
+2. Created one public subnet (Web tier) and two private subnets (App tier and DB tier).
+3. Attached an Internet Gateway to the VPC and associated it with the public subnet route table.
+4. Configured route tables so only the public subnet has internet access.
+5. Launched a Web tier EC2 instance in the public subnet with a public IP.
+6. Launched an Application tier EC2 instance in a private subnet without a public IP.
+7. Launched a Database tier EC2 instance in a private subnet without a public IP.
+8. Configured security groups to allow traffic only between required tiers.
+9. Installed and configured Nginx on the Web tier as a reverse proxy.
+10. Installed Node.js on the Application tier and deployed a backend API.
+11. Installed MySQL on the Database tier and secured it for private access.
+12. Created a database, table, and inserted sample data in MySQL.
+13. Created a dedicated database user for the Application tier.
+14. Connected the Application tier to the Database tier using private IPs.
+15. Implemented CRUD APIs in the Application tier using Node.js.
+16. Configured Nginx to forward browser requests to the Application tier.
+17. Created an HTML UI on the Web tier to perform CRUD operations.
+18. Validated CRUD operations from the browser through all three tiers.
+19. Verified database changes directly using SQL queries.
+20. Confirmed secure isolation by restricting public access to only the Web tier.
+

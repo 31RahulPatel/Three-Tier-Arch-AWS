@@ -1,0 +1,70 @@
+✅ LINUX COMMANDS USED
+
+### 🔹 System & Package Management
+
+1. `sudo apt update`
+2. `sudo apt install -y nginx`
+3. `sudo apt install -y mysql-server`
+4. `sudo apt install -y mysql-client`
+5. `sudo apt install -y nodejs npm`
+
+---
+
+### 🔹 Service Management
+
+6. `sudo systemctl start nginx`
+7. `sudo systemctl restart nginx`
+8. `sudo systemctl status nginx`
+9. `sudo systemctl start mysql`
+10. `sudo systemctl restart mysql`
+11. `sudo systemctl status mysql`
+
+---
+
+### 🔹 File & Directory Operations
+
+12. `cd app`
+13. `ls`
+14. `nano index.js`
+15. `sudo nano /etc/nginx/sites-available/default`
+16. `sudo nano /var/www/html/index.html`
+
+---
+
+### 🔹 Networking & Port Checks
+
+17. `hostname`
+18. `hostname -I`
+19. `ss -tulpn | grep 3000`
+20. `ss -tulpn | grep 3306`
+21. `nc -zv <DB_PRIVATE_IP> 3306`
+22. `curl http://localhost:3000`
+23. `curl http://<APP_PRIVATE_IP>:3000`
+
+---
+
+### 🔹 Node.js Application
+
+24. `npm init -y`
+25. `npm install express mysql2`
+26. `node index.js`
+27. `ps aux | grep node`
+
+---
+
+### 🔹 Nginx Validation & Logs
+
+28. `sudo nginx -t`
+29. `sudo tail -f /var/log/nginx/error.log`
+
+---
+
+### 🔹 SSH & Access
+
+30. `ssh ubuntu@<WEB_PUBLIC_IP>`
+31. `ssh ubuntu@<APP_PRIVATE_IP>`
+32. `ssh ubuntu@<DB_PRIVATE_IP>`
+
+---
+
+

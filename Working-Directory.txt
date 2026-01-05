@@ -1,0 +1,68 @@
+ IMPORTANT WORKING DIRECTORIES (WITH PURPOSE)
+
+### 🔹 Web Tier (Nginx + UI)
+
+1. `/etc/nginx/sites-available/`
+   → Main Nginx configuration directory
+
+2. `/etc/nginx/sites-available/default`
+   → Reverse proxy configuration file
+
+3. `/var/www/html/`
+   → Web root directory (HTML / frontend files)
+
+4. `/var/log/nginx/`
+   → Nginx access & error logs
+
+---
+
+### 🔹 Application Tier (Node.js Backend)
+
+5. `/home/ubuntu/app/`
+   → Application working directory
+
+6. `/home/ubuntu/app/index.js`
+   → Main Node.js backend file
+
+7. `/home/ubuntu/app/package.json`
+   → Node.js dependencies & scripts
+
+8. `/home/ubuntu/app/node_modules/`
+   → Installed Node.js libraries
+
+---
+
+### 🔹 Database Tier (MySQL)
+
+9. `/etc/mysql/`
+   → MySQL configuration directory
+
+10. `/etc/mysql/mysql.conf.d/mysqld.cnf`
+    → MySQL server config (bind-address)
+
+11. `/var/lib/mysql/`
+    → MySQL data directory (databases & tables)
+
+---
+
+### 🔹 System & Logs (All EC2s)
+
+12. `/var/log/syslog`
+    → System logs
+
+13. `/var/log/auth.log`
+    → SSH authentication logs
+
+---
+
+### 🔹 Optional (Git / Automation)
+
+14. `/home/ubuntu/three-tier-aws-ec2/`
+    → Git repository root
+
+15. `/home/ubuntu/scripts/`
+    → Setup / automation scripts
+
+---
+
+

@@ -1,0 +1,27 @@
+
+✅ MySQL COMMANDS USED (THREE-TIER PROJECT)
+
+1. `sudo mysql`
+2. `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'StrongPass@123';`
+3. `FLUSH PRIVILEGES;`
+4. `SHOW DATABASES;`
+5. `CREATE DATABASE appdb;`
+6. `USE appdb;`
+7. `CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(50));`
+8. `INSERT INTO users (name) VALUES ('Rahul');`
+9. `INSERT INTO users (name) VALUES ('AWS');`
+10. `SELECT * FROM users;`
+11. `UPDATE users SET name='Rahul Patel' WHERE id=1;`
+12. `DELETE FROM users WHERE id=2;`
+13. `CREATE USER 'appuser'@'%' IDENTIFIED BY 'AppPass@123';`
+14. `GRANT ALL PRIVILEGES ON appdb.* TO 'appuser'@'%';`
+15. `FLUSH PRIVILEGES;`
+16. `SHOW TABLES;`
+17. `DESC users;`
+18. `EXIT;`
+19. `mysql -u root -p`
+20. `mysql -h <DB_PRIVATE_IP> -u appuser -p`
+
+---
+
+
